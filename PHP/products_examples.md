@@ -3,7 +3,7 @@
 1. Get a list of orders from the store
 
 <pre>
-    <? php
+    
     require_once 'Bigcommerce/Api.php'
     $products = Bigcommerce::getProducts();
 
@@ -11,5 +11,5 @@
             echo $product->name;
             echo $product->price;
         }
-    ?>
+    
 </pre>
