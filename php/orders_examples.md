@@ -1,6 +1,6 @@
 ### Orders
 
-#### Get a list of orders from the store.
+#### Get a list of orders from the store
 
 <pre>
     require 'vendor/autoload.php';
@@ -14,7 +14,7 @@
 </pre>
 By default, the getOrders() request returns only 50 orders. If you want to return all the orders from the store, you have to use filters. Look at the example below.
 
-#### Get all orders from the store.
+#### Get all orders from the store
 
 Use the "limit" and "page" filter parameters to get a data beyond what the default query returns. Note that, per page, 200 orders is the max returned.
 
