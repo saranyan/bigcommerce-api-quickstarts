@@ -1,6 +1,6 @@
 ### Products
 
-#### Get a list of products from the store.
+#### Get a list of products from the store
 
 <pre>
     require 'vendor/autoload.php';
@@ -14,7 +14,7 @@
 </pre>
 By default, the getProducts() request returns only 50 products. If you want to return all the products from the store, you have to use filters. Look at the example below.
 
-#### Get all products from the store.
+#### Get all products from the store
 
 Use the "limit" and "page" filter parameters to get a data beyond what the default query returns. Note that, per page, 200 products is the max returned.
 
@@ -51,7 +51,7 @@ In cases, when you have more than 200 products in your store, you can use a coun
 
 #### Create a product
 
-Products have many fields. You can check out http://developer.bigcommerce.com/api/products#post-productsjson for information on the product fields allowed as part of a POST request.
+Products have many fields. You can check out <a href="http://developer.bigcommerce.com/api/products#post-productsjson">this docs page</a> for information on the product fields allowed as part of a POST request.
 
 Let us say, we want to create a product using just the mandatory fields needed for a POST request. Note that price needs to specified as a string, while the weight is a decimal. Note that if the is_visible flag, though not mandatory is not set to true, the product by default would not be visible -
 
@@ -82,7 +82,7 @@ If we want to search by a product SKU, we can use the following code. Remember t
 <pre>
     require 'vendor/autoload.php';
     use Bigcommerce\Api\Client as Bigcommerce;
-    
+
     $filter = array('sku' => 'abc-blocks-1-wood');
     $skus = Bigcommerce::getSkus($filter);
     print_r($skus);
