@@ -1,4 +1,7 @@
-### Connecting with a store
+### Authentication 
+
+#### Connecting with a store
+
 
 Using the Bigcommerce Ruby library, you can establish a connection with a store in the following way.
 
