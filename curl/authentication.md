@@ -1,4 +1,6 @@
-### Connecting with a store
+### Authentication
+
+#### Connecting with a store
 
 Currently, Bigcommerce stores can be connected via basic auth. 
 <pre>
